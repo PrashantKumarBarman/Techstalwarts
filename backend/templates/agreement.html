@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Deal agreement</title>
+  </head>
+  <body>
+    <h1>Deal</h1>
+    <ul>
+        <li><strong>Deal Id:</strong> {{deal.id}}</li>
+        <li><strong>Product:</strong> {{deal.product}}</li>
+        <li><strong>Agreement Date:</strong> {{deal.agreement_date}}</li>
+        <li><strong>State:</strong> {{deal.state.state}}</li>
+        <li><strong>Facility Letter Date:</strong> {{deal.facility_letter_date}}</li>
+        <li><strong>Account Name:</strong> {{deal.account_name}}</li>
+        <li><strong>Sanction Letter Date:</strong> {{deal.sanction_letter_date}}</li>
+        <li><strong>Details of Receivable:</strong> {{deal.details_of_receivable}}</li>
+        <li><strong>Attachment Id:</strong> {{attachment}}</li>
+    </ul>
+    <br />
+    <h2>Parties</h2>
+    <ul>
+      {{#each deal.parties}}
+      <li><strong>Party Name:</strong> {{this.name}}</li>
+      <li><strong>Party Email:</strong> {{this.email}}</li>
+      <li><strong>Party Mobile Number:</strong> {{this.mobile}}</li>
+      <li><strong>Type of Party:</strong> {{this.type}}</li>
+      <li><strong>Party Consultant Type:</strong> {{this.consultant_type}}</li>
+      <li><strong>Party Signatory Name:</strong> {{this.signatory_name}}</li>
+      <li><strong>Party Address:</strong> {{this.party_address}}</li>
+      <li><strong>Party Branch:</strong> {{this.branch}}</li>
+      <br />
+      {{/each}}
+    </ul>
+  </body>
+</html>

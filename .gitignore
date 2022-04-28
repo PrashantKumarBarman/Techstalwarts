@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+backend/media
+
+!backend/media/.gitkeep
+
+backend/ftp
+
+!backend/ftp/.gitkeep
