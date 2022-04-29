@@ -27,7 +27,8 @@
 
 - Open a new terminal
 - cd into backend folder
-- run `npm install`
+- Import `techstalwarts.sql` file into Mysql, it contains the database
+- Run `npm install`
 - For running backend server in development mode run `npm run dev`
 - For running backend server like regular/nodejs script use `nodemon dist/app.js` or `node dist/app.js`
 
